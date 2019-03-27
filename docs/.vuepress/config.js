@@ -5,16 +5,32 @@ module.exports = {
   themeConfig: {
     sidebar: [
       {
-        title: '介绍',
+        title: '起步',
         collapsable: false,
         children: [
-          '/'
+          '/guide/',
+          '/guide/install',
+          '/guide/var'
         ]
       },
       {
         title: '模块',
         collapsable: false,
         children: [
+          '/basics/',
+          '/basics/icon',
+          '/basics/color',
+          '/basics/layout',
+          '/basics/size',
+          '/basics/text',
+        ]
+      },
+      {
+        title: '组件',
+        collapsable: false,
+        children: [
+          '/components/',
+          '/components/button'
         ]
       }
     ],
