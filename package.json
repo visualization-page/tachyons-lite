@@ -1,0 +1,28 @@
+{
+  "name": "tachyons-lite",
+  "version": "1.0.0",
+  "description": "简化版 tachyons",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/visualization-page/tachyons-lite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/visualization-page/tachyons-lite/issues"
+  },
+  "homepage": "https://github.com/visualization-page/tachyons-lite#readme",
+  "devDependencies": {
+    "vuepress": "^0.14.8"
+  }
+}
