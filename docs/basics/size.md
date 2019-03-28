@@ -1,1 +1,55 @@
 # 尺寸
+
+尺寸的范围包含：字体大小、宽度、高度、外边距、内边距、上右下左距离(top、right、bottom、left)。
+
+其中，宽度和高度包含了百分比，边距与距离包含方位"上右下左"，分别为"trbl"。 
+
+```stylus
+font-size = 10 12 13 14 15 16 17 18 20 24 28 32 40
+width-size = 30 40 50 60 70 80 90 100 200
+height-size = 30 35 40 45 50 55 60 65 70 80 90 100
+margin-size = 5 10 15 20 30 40 45 50 55 60
+padding-size = 5 10 15 20 25 30 35 40 45 50
+position-size = 0 10 20 30 40 50
+
+// 宽度百分比
+width-percent = 20 25 33.3333 50 100
+
+// 高度百分比
+height-percent = 50 100
+
+// 方向
+direction = {
+  t: top,
+  r: right, 
+  b: bottom,
+  l: left,
+  tb: top bottom,
+  tr: top right,
+  lt: left top,
+  lr: left right,
+  lb: left bottom  
+}
+```
+
+例子：
+
+- 字体，`f10`，`f12`，`vw-f10`，`vw-f12`
+- 宽度，`w30`，`w40`，`vw-w30`，`vw-w40`
+- 高度，`h30`，`h40`，`vw-h30`，`vw-h40`
+- 外边距，`m5`，`m10`，`vw-m10`，`vw-m5`
+  - 上外边距，`mt-5`，`vw-mt5`
+  - 右外边距，`mr-5`，`vw-mr5`
+  - 下外边距，`mb-5`，`vw-mb5`
+  - 左外边距，`ml-5`，`vw-ml5`
+  - 左右自适应，`m-auto` 
+- 内边距，`p5`，`p10`，`p15`
+  - 上内边距，`pt5`，`pt10`，`vw-pt5`
+  - 右内边距，`pr5`，`pr10`，`vw-pt5`
+  - 下内边距，`pb5`，`pb10`，`vw-pb10`
+  - 左内边距，`pl5`，`vw-pb10`
+- 距离
+  - 上距离，`t5`，`t10`，`vw-t5`
+  - 右距离，`r5`，`r10`，`vw-r5`
+  - 下距离，`b5`，`b10`，`vw-b5`
+  - 左距离，`l5`，`l10`，`vw-l5`
