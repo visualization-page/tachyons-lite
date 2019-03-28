@@ -1,0 +1,47 @@
+@import '../var.styl'
+@import '../util.styl'
+
+alias = {
+  margin: m,
+  padding: p,
+  width: w,
+  height: h,
+  'font-size': f
+}
+
+noVw = width height
+
+genStyle($key, $value, $dirKey = '', $dirVal = '', hasVw = false)
+  prefix = ''
+  if hasVw
+    prefix = 'vw-'
+  .{prefix}{alias[$key]}{$dirKey}{$value}
+    if ($dirVal == '')
+      {$key} px($value, hasVw)
+    else
+      for $dir in $dirVal
+        {$key == '' ? '' : $key + '-'}{$dir} px($value, hasVw)
+
+gen($type, $list = margin-size, $hasDir = true)
+  for $size in $list
+    hasVw = $type != 'width' && $type != 'height' && $size > 0
+    unless $type == ''
+      genStyle($type, $size)
+      if hasVw
+        genStyle($type, $size, '', '', true)
+
+    if ($hasDir)
+      for $dirKey, $dirVal in direction
+        genStyle($type, $size, $dirKey, $dirVal)
+        if hasVw
+          genStyle($type, $size, $dirKey, $dirVal, true)
+
+
+gen('margin')
+gen('padding')
+gen('width', width-size, false)
+gen('height', height-size, false)
+gen('font-size', font-size, false)
+gen('', position-size)
+
+
