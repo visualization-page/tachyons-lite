@@ -30,7 +30,7 @@ gen($type, $list = margin-size, $hasDir = true)
       if hasVw
         genStyle($type, $size, '', '', true)
 
-    if ($hasDir)
+    if $hasDir
       for $dirKey, $dirVal in direction
         genStyle($type, $size, $dirKey, $dirVal)
         if hasVw
