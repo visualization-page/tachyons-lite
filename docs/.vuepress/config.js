@@ -17,21 +17,23 @@ module.exports = {
         title: '模块',
         collapsable: false,
         children: [
-          '/basics/',
+          '/basics/reset',
           '/basics/icon',
           '/basics/color',
           '/basics/layout',
           '/basics/size',
           '/basics/text',
+          '/basics/border',
+          '/basics/shadow',
         ]
       },
       {
         title: '组件',
         collapsable: false,
         children: [
-          '/components/',
           '/components/button',
-          '/components/layout'
+          '/components/layout',
+          '/components/text'
         ]
       }
     ],

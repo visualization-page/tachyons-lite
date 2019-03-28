@@ -1,6 +1,6 @@
 # 颜色
 
-颜色分为字体色和背景色，前缀为 `.c-` 和 `.bg-`
+颜色分为字体色、背景色和边框色，前缀分别为 `.c-` 、 `.bg-` 和 `.bd-`
 
 <docs-color :color="color" />
 
@@ -45,10 +45,19 @@
   }
 </script>
 
+透明色
+
+```stylus
+.bg-transparent
+  background-color transparent
+.bd-transparent  
+  border-color transparent
+```
+
 例子
 
 ```html
-<div class="bg-f7 c-666">
+<div class="bg-f7 c-666 bd-eee">
   ...
 </div>
 ```

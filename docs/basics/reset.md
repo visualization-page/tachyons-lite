@@ -1,0 +1,76 @@
+# 重置
+
+```stylus
+html
+  box-sizing border-box
+  -ms-overflow-style scrollbar
+  -webkit-tap-highlight-color rgba(0,0,0,0)
+
+*,
+*::before,
+*::after
+  box-sizing inherit
+  
+body
+  -webkit-touch-callout none
+  -webkit-text-size-adjust none  
+  
+body, h1, h2, h3, h4, h5, h6, p
+  margin 0
+  padding 0
+
+ol, ul, dl
+  margin 0
+  padding 0
+  list-style none
+
+table
+  width 100%
+  border-collapse collapse
+  border-spacing 0
+
+a
+  color link
+  text-decoration none
+  
+img
+  border none
+  vertical-align middle
+
+input,
+button,
+select,
+textarea
+  font inherit
+  line-height inherit
+  -webkit-appearance none
+
+input,
+textarea,
+select
+  &.disabled
+    cursor not-allowed
+    pointer-events none
+
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea
+  touch-action manipulation  
+  
+[overflow-h]
+  overflow hidden !important
+
+[overflow-a]
+  overflow auto !important
+  &.touch
+    -webkit-overflow-scrolling touch  
+    
+::-webkit-input-placeholder
+  color placeholder
+```
