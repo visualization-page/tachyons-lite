@@ -26,7 +26,7 @@ export default {
     }
   },
 
-  created() {
+  mounted() {
     // 导入 iconfont
     if (Array.from(document.head.childNodes).every(item => item.id !== 'docs-icon')) {
       const link = document.createElement('link')
