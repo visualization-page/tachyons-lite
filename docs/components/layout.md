@@ -2,6 +2,8 @@
 
 组件布局包含了常用模块的组合
 
+flex 类
+
 ```stylus
 .flex-center
   @flex
@@ -17,5 +19,17 @@
   @align-center
 ```
 
+其余类
 
+```stylus
+.fixed-center  
+  @fixed
+.fixed-bottom
+  @fixed  
+  
+.absolute-center
+  @absolute
+.absolute-bottom  
+    
+```
 
