@@ -2,6 +2,12 @@
 
 主要布局为 flex，还包括 float、position、display
 
+::: tip
+模块的样式都是单元式的，如需使用更多特性，请查看[组件](/components/) - [布局](/components/layout.md)
+:::
+
+flex 定义：
+
 | flex 类 | 样式 |
 |------|------|
 | 容器 |  |
@@ -21,3 +27,19 @@
 |items-center   |{ align-items: center; }|
 |items-baseline |{ align-items: baseline; }|
 |content-center  |{ align-content: center; }|
+
+其余定义：
+
+|类|样式|
+|----|----|
+|relative|{ position: relative; }|
+|absolute|{ position: absolute; }|
+|fixed|{ position: fixed; }|
+|sticky|{ position: sticky; }|
+|fl|{ float: left; }|
+|fr|{ float: right; }|
+|fn|{ float: none; }|
+|dn|{ display: none; }|
+|di|{ display: inline; }|
+|db|{ display: block; }|
+|dib|{ display: inline-block; }|

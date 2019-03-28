@@ -30,7 +30,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/components/',
-          '/components/button'
+          '/components/button',
+          '/components/layout'
         ]
       }
     ],
