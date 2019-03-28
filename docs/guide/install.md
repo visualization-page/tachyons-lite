@@ -3,22 +3,22 @@
 使用 npm or yarn 安装
 
 ```md
-npm install tachyons-lite --save
-yarn add tachyons-lite
+npm install tcon --save
+yarn add tcon
 ```
 
 一次性导入，在项目入口根页面例如 `App.vue` 导入
 
 ```stylus
-@import '~tachyons-lite/size/index.css'
+@import '~tcon'
 ```
 
 按需引入
 
 ```stylus
 // 模块
-@import '~tachyons-lite/size/index.css'
+@import '~tcon/size/index.css'
 
 // 组件
-@import '~tachyons-lite/button/index.css'
+@import '~tcon/button/index.css'
 ```

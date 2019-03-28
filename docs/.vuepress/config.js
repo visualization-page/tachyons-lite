@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Tachyons Lite',
-  description: 'tachyons-lite',
+  title: 'Tcon css',
+  description: 'tcon css',
   lastUpdated: 'Last Updated',
   themeConfig: {
     sidebar: [
