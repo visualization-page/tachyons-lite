@@ -1,1 +1,54 @@
 # 颜色
+
+颜色分为字体色和背景色，前缀为 `.c-` 和 `.bg-`
+
+<docs-color :color="color" />
+
+变量定义
+
+<pre style=color:#fff>
+{{ colorStyl }}
+</pre>
+
+<script>
+  export default {
+    data() {
+      return {
+        color: {
+          // 灰色系
+          '000': '#000000',
+          '333': '#262A30',
+          '666': '#5C626B',
+          '999': '#959BA3',
+          fff: '#ffffff',
+          aaa: '#aaaaaa',
+          ccc: '#cccccc',
+          eee: '#eeeeee',
+          f2: '#f2f2f2',
+          f7: '#f7f8f9',
+          
+          // a 标签
+          link: '#409eff',
+          
+          // 主色
+          main: '#ff4400'
+        }
+      } 
+    },
+    
+    computed: {
+      colorStyl() {
+        // return `color = { ${Object.keys(this.color).map(k => `${k}: ${this.color[k]}`).join(',')} }`
+        return `color = ${JSON.stringify(this.color, null, 2)}`
+      }
+    }
+  }
+</script>
+
+例子
+
+```html
+<div class="bg-f7 c-666">
+  ...
+</div>
+```
