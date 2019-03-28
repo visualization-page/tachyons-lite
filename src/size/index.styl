@@ -6,36 +6,74 @@ alias = {
   padding: p,
   width: w,
   height: h,
-  'font-size': f
+  'font-size': f,
+  'z-index': z,
+  'border-radius': br
 }
 
-noVw = width height
+noVwList = width height z-index border-radius
+unitMap = {
+  margin: px,
+  padding: px,
+  width: px,
+  height: px,
+  'font-size': px,
+  'z-index': '',
+  '': px,
+  'border-radius': px
+}
 
-genStyle($key, $value, $dirKey = '', $dirVal = '', hasVw = false)
+/**
+ * 生成 css
+ * @params $key alias 的 key
+ * @params $value 尺寸的值
+ * @params $dirKey 方向的简写
+ * @params $dirVal 方向的值，可能存在多个
+ * @params $hasVw 是否为 vw 单位
+ */
+genStyle($key, $value, $dirKey = '', $dirVal = '', $hasVw = false)
   prefix = ''
-  if hasVw
+  if $hasVw
     prefix = 'vw-'
   .{prefix}{alias[$key]}{$dirKey}{$value}
     if ($dirVal == '')
-      {$key} px($value, hasVw)
+      {$key} size($value, unitMap[$key], $hasVw)
     else
       for $dir in $dirVal
-        {$key == '' ? '' : $key + '-'}{$dir} px($value, hasVw)
+        {$key == '' ? '' : $key + '-'}{$dir} size($value, unitMap[$key], $hasVw)
 
-gen($type, $list = margin-size, $hasDir = true)
+genPercent($key, $list)
   for $size in $list
-    hasVw = $type != 'width' && $type != 'height' && $size > 0
+    .{$key}-{$size}
+      {$key} size($size == 33 ? 33.33333 : $size, 'percent')
+
+/**
+ * 生成 css
+ * @params $type alias 的 key
+ * @params $list 尺寸列表
+ * @params $hasDir 是否包含方向
+ * @params forceVw 是否强制转化为 vw
+ */
+gen($type, $list = margin-size, $hasDir = true, forceVw = false)
+  for $size in $list
+    hasVw = (!($type in noVwList) || forceVw) && $size > 0
     unless $type == ''
+      // 排除 position-size，因为它没有 alias 前缀
       genStyle($type, $size)
       if hasVw
+        // 存在 vw
         genStyle($type, $size, '', '', true)
 
     if $hasDir
       for $dirKey, $dirVal in direction
         genStyle($type, $size, $dirKey, $dirVal)
         if hasVw
+          // 存在 vw
           genStyle($type, $size, $dirKey, $dirVal, true)
 
+.m-auto
+  margin-left auto
+  margin-right auto
 
 gen('margin')
 gen('padding')
@@ -43,5 +81,7 @@ gen('width', width-size, false)
 gen('height', height-size, false)
 gen('font-size', font-size, false)
 gen('', position-size)
-
-
+gen('z-index', index-size, false)
+gen('border-radius', radius-size, false)
+genPercent('width', width-percent)
+genPercent('height', height-percent)

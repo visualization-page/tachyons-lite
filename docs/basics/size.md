@@ -1,5 +1,22 @@
 # 尺寸
 
+按需使用
+
+```stylus
+@import '~tcon/dist/size.css'
+```
+
+也可以引入源文件，自定义尺寸范围，[源码](https://github.com/visualization-page/tcon/blob/77388775b6cb62e8ac8c39db1fc0c1e5bc62d490/src/size/index.styl#L40)参考
+
+```stylus
+@import '~tcon/src/size/index.styl'
+
+// 自定义
+margin-size = 1 2 3 4
+// 生成 css
+gen('margin') 
+```
+
 尺寸的范围包含：字体大小、宽度、高度、外边距、内边距、上右下左距离(top、right、bottom、left)、层级、圆角。
 
 其中，宽度和高度包含了百分比，边距与距离包含方位"上右下左"，分别为"trbl"。 
@@ -41,10 +58,13 @@ radius-size = 1 2 3 4 5 6 7 8 10 15 20
 例子：
 
 - 字体，`f10`，`f12`，`vw-f10`，`vw-f12`
-- 宽度，`w30`，`w40`，`vw-w30`，`vw-w40`
+- 宽度，`w30`，`w40`
   - 百分比，`width-20`，`width-100`，`height-100`
-- 高度，`h30`，`h40`，`vw-h30`，`vw-h40`
+- 高度，`h30`，`h40`
   - 百分比，`height-100`
+  :::warning
+  考虑到实际应用场景，减量减少代码冗余，宽、高不支持 vw。可以在[自定义生成](https://github.com/visualization-page/tcon/blob/77388775b6cb62e8ac8c39db1fc0c1e5bc62d490/src/size/index.styl#L25)时，使 `forceVw = true` 来支持。
+  :::
 - 外边距，`m5`，`m10`，`vw-m10`，`vw-m5`
   - 上外边距，`mt5`，`vw-mt5`
   - 右外边距，`mr5`，`vw-mr5`
@@ -63,3 +83,4 @@ radius-size = 1 2 3 4 5 6 7 8 10 15 20
   - 左距离，`l5`，`l10`，`vw-l5`
 - 层级，`z1`，`z999`
 - 圆角，`br1`，`br10`
+

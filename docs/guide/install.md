@@ -16,9 +16,15 @@ yarn add tcon
 按需引入
 
 ```stylus
-// 模块
-@import '~tcon/size/index.css'
+@import '~tcon/dist/size.css'
+@import '~tcon/dist/button.css'
+```
 
-// 组件
-@import '~tcon/button/index.css'
+引入源文件，自定义生成，[源码](https://github.com/visualization-page/tcon/blob/77388775b6cb62e8ac8c39db1fc0c1e5bc62d490/src/size/index.styl#L40)参考。
+```stylus
+@import '~tcon/src/size/index.styl'
+
+margin-size = 1 2 3 4
+// 生成 css
+gen('margin') 
 ```
