@@ -1,5 +1,9 @@
-# 安装
+Welcome to Tcon css !
 
-
-
-[netlify](https://app.netlify.com/sites/affectionate-hypatia-53059a/deploys?filter=master)
+<script>
+  export default {
+    mounted() {
+      location.href = '/guide/'
+    }
+  }
+</script>
