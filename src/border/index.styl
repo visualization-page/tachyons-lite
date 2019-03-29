@@ -1,0 +1,53 @@
+@import '../block.styl'
+
+dirAlias = {
+  '': '',
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+  lr: left right,
+  tb: top bottom
+  n: none
+}
+
+dirMobileAlias = {
+  t: top,
+  b: bottom,
+  tb: top bottom
+}
+
+colorMobile = #eeeeee
+style = dotted dashed solid none
+
+genStyle()
+  for $style in style
+    .bd-{$style}
+      border-style $style
+
+gen($list)
+  genStyle()
+  for $alias, $name in $list
+    isEm = $name == ''
+    isNone = $name == none
+    name = isEm ? 'd' : $alias
+    .b{name}
+      for $n in $name
+        val = isEm || isNone ? '' : $n + '-'
+        border-{val}style isNone ? none : solid
+        border-{val}width isNone ? 0 : 1px
+
+genMobile($dirList, $colorList, $suffix = '')
+  for $alias, $name in $dirList
+    for $c in $colorList
+      .mb{$alias}{$suffix}
+        @extend $relative
+        &:before
+          @extend $border
+          for $n in $name
+            border-{$n}-width 1px
+          border-style solid
+          border-color $c
+
+gen(dirAlias)
+genMobile(dirMobileAlias, colorMobile)

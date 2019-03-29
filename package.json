@@ -1,5 +1,5 @@
 {
-  "name": "tachyons-lite",
+  "name": "tcon",
   "version": "1.0.0",
   "description": "简化版 tachyons",
   "main": "index.js",
@@ -13,7 +13,12 @@
     "size": "stylus src/size/index.styl -o ./dist/size.css",
     "layout": "stylus src/layout/index.styl -o ./dist/layout.css",
     "color": "stylus src/color/index.styl -o ./dist/color.css",
-    "text": "stylus src/text/index.styl -o ./dist/text.css"
+    "text": "stylus src/text/index.styl -o ./dist/text.css",
+    "border": "stylus src/border/index.styl -o ./dist/border.css",
+    "shadow": "stylus src/shadow/index.styl -o ./dist/shadow.css",
+    "button": "stylus src/button/index.styl -o ./dist/button.css",
+    "reset": "stylus src/reset/index.styl -o ./dist/reset.css",
+    "release": "stylus src/index.styl -o ./dist/tcon.css --compress"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,36 @@
+@import '../var.styl'
+@import '../block.styl'
+@import '../util.styl'
+
+size($list)
+  list = ''
+  for $n in $list
+    list[index($list, $n)] = px($n)
+  list
+
+btnBase()
+  @extend $dib
+  cursor pointer
+  border 1px transparent solid
+
+genProperty($list)
+  for $k, $v in $list
+    {$k} $v
+
+gen($list, $isSize = false)
+  for $name, $val in $list
+    key = $name == '' ? '' : '-' + $name
+    .btn{key}
+      if $isSize
+        btnBase()
+      for $vk, $vv in $val
+        if $vk == 'hover'
+          &:hover
+            genProperty($vv)
+        else if $isSize
+          {$vk} size($vv)
+        else
+          {$vk} $vv
+
+gen(btn-size, true)
+gen(btn-skin)

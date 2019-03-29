@@ -16,6 +16,10 @@ $vt
   vertical-align top
 $vm
   vertical-align middle
+$relative
+  position relative
+$dib
+  display inline-block
 
 $two-line
   display -webkit-box
@@ -26,3 +30,17 @@ $center
   top 50%
   left 50%
   transform translate(-50%, -50%)
+
+$border
+  content ''
+  position absolute
+  top 0
+  left 0
+  width 200%
+  height 200%
+  -webkit-transform-origin 0 0
+  transform-origin 0 0
+  -webkit-transform scale(0.5, 0.5)
+  transform scale(0.5, 0.5)
+  pointer-events none
+  z-index 1

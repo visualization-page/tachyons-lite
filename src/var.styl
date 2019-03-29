@@ -54,5 +54,54 @@ radius-size = 1 2 3 4 5 6 7 8 10 15 20
 
 // padding 来控制按钮的大小
 btn-large-size = 7 25
+btn-large-radius = 6
+btn-large-font = 16
+
 btn-small-size = 5 17
+btn-small-radius = 4
+btn-small-font = 14
+
 btn-mini-size = 3 12
+btn-mini-radius = 2
+btn-mini-font = 12
+
+btn-size = {
+  large: {
+    padding: 7 30,
+    border-radius: 4,
+    font-size: 16
+  },
+  '': {
+    padding: 5 17,
+    border-radius: 3,
+    font-size: 14
+  },
+  mini: {
+    padding: 3 12,
+    border-radius: 2,
+    font-size: 12
+  }
+}
+
+btn-skin = {
+  main: {
+    color: color['fff'],
+    background-color: color['main'],
+    border-color: color['main'],
+    hover: {
+      color: #fff,
+      background-color: lightness(color['main'], 60%),
+      border-color: lightness(color['main'], 60%)
+    }
+  },
+  default: {
+    color: color['666'],
+    background-color: color['fff'],
+    border-color: color['999'],
+    hover: {
+      color: color['main'],
+      border-color: color['main'],
+      background-color: #f2f2f2
+    }
+  }
+}

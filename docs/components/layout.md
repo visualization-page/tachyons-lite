@@ -1,4 +1,4 @@
-# 布局
+# 布局 layout
 
 组件布局包含了常用模块的组合
 
@@ -24,11 +24,6 @@ flex 类
 其余类
 
 ```stylus
-$center
-  top 50%
-  left 50%
-  transform translate(-50%, -50%)
-
 .fixed-center
   @extend .fixed, $center
 
@@ -44,11 +39,9 @@ $center
   bottom 0
 
 .dib-middle
-  @extend .dib
-  vertical-align middle
+  @extend .dib, $vm
 
 .dib-top
-  @extend .dib
-  vertical-align top
+  @extend .dib, $vt
 ```
 
