@@ -1,0 +1,98 @@
+@import '../block.styl'
+
+/**
+ * modules
+ */
+
+.flex
+  display flex
+.flex-column
+  flex-direction column
+.flex-row
+  flex-direction row
+.flex-wrap
+  flex-wrap wrap
+.flex-shrink-0
+  flex-shrink 0
+.flex-grow-1
+  flex-grow 1
+
+.justify-start
+  justify-content flex-start
+.justify-end
+  justify-content flex-end
+.justify-center
+  justify-content center
+.justify-between
+  justify-content space-between
+.justify-around
+  justify-content space-around
+
+.items-center
+  align-items center
+.items-baseline
+  align-items baseline
+.content-center
+  align-content center
+
+.relative
+  position relative
+.absolute
+  position absolute
+.fixed
+  position fixed
+.sticky
+  position sticky
+.fl
+  float left
+.fr
+  float right
+.fn
+  float none
+.dn
+  display none
+.di
+  display inline
+.db
+  display block
+.dib
+  display inline-block
+
+/**
+ * components
+ */
+
+.flex-center
+  @extend .flex, .justify-center, .items-center
+
+.flex-center-between
+  @extend .flex, .justify-between, .items-center
+
+.flex-center-justify
+  @extend .flex, .justify-center
+
+.flex-center-align
+  @extend .flex, .items-center
+
+.flex-between
+  @extend .flex, .justify-between
+
+.fixed-center
+  @extend .fixed, $center
+
+.fixed-bottom
+  @extend .fixed
+  bottom 0
+
+.absolute-center
+  @extend .absolute, $center
+
+.absolute-bottom
+  @extend .absolute
+  bottom 0
+
+.dib-middle
+  @extend .dib, $vm
+
+.dib-top
+  @extend .dib, $vt

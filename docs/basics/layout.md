@@ -1,9 +1,17 @@
-# 布局
+# 布局 layout
+
+按需引入
+
+```js
+import 'tcon/dist/layout.css' 
+// or
+import { layout } from 'tcon'
+```
 
 主要布局为 flex，还包括 float、position、display
 
 ::: tip
-模块的样式都是单元式的，如需使用更多特性，请查看[组件](/components/) - [布局](/components/layout.md)
+模块的样式都是单元式的，如需使用更多特性，请查看[组件 - 布局](/components/layout.md)
 :::
 
 flex 定义：

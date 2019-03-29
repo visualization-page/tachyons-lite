@@ -6,30 +6,49 @@ flex 类
 
 ```stylus
 .flex-center
-  @flex
-  @justify-center
-  @align-center
+  @extend .flex, .justify-center, .items-center
+
+.flex-center-between
+  @extend .flex, .justify-between, .items-center
 
 .flex-center-justify
-  @flex
-  @justify-center
+  @extend .flex, .justify-center
 
 .flex-center-align
-  @flex
-  @align-center
+  @extend .flex, .items-center
+
+.flex-between
+  @extend .flex, .justify-between
 ```
 
 其余类
 
 ```stylus
-.fixed-center  
-  @fixed
+$center
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+
+.fixed-center
+  @extend .fixed, $center
+
 .fixed-bottom
-  @fixed  
-  
+  @extend .fixed
+  bottom 0
+
 .absolute-center
-  @absolute
-.absolute-bottom  
-    
+  @extend .absolute, $center
+
+.absolute-bottom
+  @extend .absolute
+  bottom 0
+
+.dib-middle
+  @extend .dib
+  vertical-align middle
+
+.dib-top
+  @extend .dib
+  vertical-align top
 ```
 

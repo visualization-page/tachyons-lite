@@ -11,7 +11,9 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "size": "stylus src/size/index.styl -o ./dist/size.css",
-    "size:build": "stylus src/size/index.styl -o ./dist/size.css --compress"
+    "layout": "stylus src/layout/index.styl -o ./dist/layout.css",
+    "color": "stylus src/color/index.styl -o ./dist/color.css",
+    "text": "stylus src/text/index.styl -o ./dist/text.css"
   },
   "repository": {
     "type": "git",

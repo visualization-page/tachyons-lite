@@ -1,6 +1,36 @@
-# 颜色
+# 颜色 color
+
+按需引入
+
+```js
+import 'tcon/dist/color.css'
+// or
+import { color } from 'tcon'
+```
+
+自定义生成
+
+```stylus
+@import '~tcon/src/color/index.styl'
+
+// 自定义 color 键值对
+color = {
+  a: #aaaaaa
+}
+gen(color)
+```
 
 颜色分为字体色、背景色和边框色，前缀分别为 `.c-` 、 `.bg-` 和 `.bd-`
+
+```stylus
+alias = {
+  color: c,
+  background-color: bg,
+  border-color: bd
+}
+```
+
+颜色示例：
 
 <docs-color :color="color" />
 

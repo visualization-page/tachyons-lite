@@ -1,0 +1,33 @@
+@import '../block.styl'
+
+.tl
+  text-align: left
+.tc
+  text-align: center
+.tr
+  text-align: right
+
+.i
+  font-style: italic
+.b
+  font-weight: bold
+.underline
+  text-decoration: underline
+.strike
+  text-decoration: line-through
+.ellipsis
+  text-overflow: ellipsis
+
+.break
+  word-break: break-all
+.nowrap
+  white-space: nowrap
+
+/**
+ * components
+ */
+
+.th1
+  @extend $oh, .ellipsis, .nowrap
+.th2
+  @extend $oh, .ellipsis, $two-line

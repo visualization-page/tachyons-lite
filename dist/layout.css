@@ -1,0 +1,117 @@
+/**
+ * modules
+ */
+.flex,
+.flex-center,
+.flex-center-between,
+.flex-center-justify,
+.flex-center-align,
+.flex-between {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center,
+.flex-center,
+.flex-center-justify {
+  justify-content: center;
+}
+.justify-between,
+.flex-center-between,
+.flex-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.items-center,
+.flex-center,
+.flex-center-between,
+.flex-center-align {
+  align-items: center;
+}
+.items-baseline {
+  align-items: baseline;
+}
+.content-center {
+  align-content: center;
+}
+.relative {
+  position: relative;
+}
+.absolute,
+.absolute-center,
+.absolute-bottom {
+  position: absolute;
+}
+.fixed,
+.fixed-center,
+.fixed-bottom {
+  position: fixed;
+}
+.sticky {
+  position: sticky;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.fn {
+  float: none;
+}
+.dn {
+  display: none;
+}
+.di {
+  display: inline;
+}
+.db {
+  display: block;
+}
+.dib,
+.dib-middle,
+.dib-top {
+  display: inline-block;
+}
+/**
+ * components
+ */
+.fixed-center,
+.absolute-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fixed-bottom {
+  bottom: 0;
+}
+.absolute-bottom {
+  bottom: 0;
+}
+.dib-middle {
+  vertical-align: middle;
+}
+.dib-top {
+  vertical-align: top;
+}

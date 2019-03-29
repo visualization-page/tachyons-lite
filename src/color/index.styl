@@ -1,0 +1,15 @@
+@import '../var.styl'
+
+alias = {
+  color: c,
+  background-color: bg,
+  border-color: bd
+}
+
+gen($list)
+  for $key, $alias in alias
+    for $colorKey, $color in $list
+      .{$alias}-{$colorKey}
+        {$key} $color
+
+gen(color)

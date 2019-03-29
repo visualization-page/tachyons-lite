@@ -1,5 +1,13 @@
-# 文本
+# 文本 text
 
+按需引入
+
+```js
+import 'tcon/dist/text.css'
+// or
+import { text } from 'tcon'
+```
+ 
 ::: tip
 更多特性，请查看[组件](/components/) - [文本](/components/text.md)
 :::
