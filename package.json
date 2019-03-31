@@ -1,13 +1,12 @@
 {
   "name": "tcon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "简化版 tachyons",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "size": "stylus src/size/index.styl -o ./dist/size.css",
@@ -31,8 +30,10 @@
     "url": "https://github.com/visualization-page/tachyons-lite/issues"
   },
   "homepage": "https://github.com/visualization-page/tachyons-lite#readme",
+  "dependencies": {
+    "stylus": "^0.54.5"
+  },
   "devDependencies": {
-    "stylus": "^0.54.5",
     "vuepress": "^0.14.8"
   }
 }
