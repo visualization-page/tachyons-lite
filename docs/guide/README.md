@@ -5,6 +5,15 @@ Tcon css 给每个业务项目提供高度抽象无冗余的原子型 css 库。
 特性：
 
 - 提供 babel 插件简化写法：[babel-plugin-tcon](https://github.com/visualization-page/babel-plugin-tcon)
+  ```js
+  // 意味着在 .js 文件中引入 css 文件
+  import 'tcon/button'
+  import 'tcon/size'
+
+  // 会被转化为
+  import 'tcon/dist/button.css'
+  import 'tcon/dist/size.css'
+  ```
 
 - 提供 cli 处理定制化：[tcon-cli](https://github.com/visualization-page/tcon-cli) 
 
