@@ -5,7 +5,7 @@
 ```js
 import 'tcon/dist/size.css'
 // or
-import { size } from 'tcon'
+import 'tcon/size'
 ```
 
 也可以引入源文件，自定义尺寸范围，[源码](https://github.com/visualization-page/tcon/blob/77388775b6cb62e8ac8c39db1fc0c1e5bc62d490/src/size/index.styl#L40)参考

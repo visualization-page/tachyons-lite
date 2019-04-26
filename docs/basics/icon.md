@@ -5,7 +5,7 @@
 ```js
 import 'tcon/dist/icon.css'
 // or
-import { icon } from 'tcon'
+import 'tcon/icon'
 ```
 
 图标模块使用 iconfont ，内置可使用的列表如下

@@ -10,7 +10,7 @@
 ```js
 import 'tcon/dist/button.css'
 // or
-import { button } from 'tcon'
+import 'tcon/button'
 ```
 
 自定义按钮

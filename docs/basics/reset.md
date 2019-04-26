@@ -5,7 +5,7 @@
 ```js
 import 'tcon/dist/reset.css'
 // or
-import { reset } from 'tcon'
+import 'tcon/reset'
 ```
 
 

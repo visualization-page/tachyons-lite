@@ -5,7 +5,7 @@
 ```js
 import 'tcon/dist/layout.css' 
 // or
-import { layout } from 'tcon'
+import 'tcon/layout'
 ```
 
 主要布局为 flex，还包括 float、position、display

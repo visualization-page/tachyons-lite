@@ -17,11 +17,12 @@ import 'tcon'
 ```js
 import 'tcon/dist/size.css'
 import 'tcon/dist/button.css'
+import 'tcon/dist/layout.css'
 ```
 
 安装 [babel-plugin-tcon](https://github.com/visualization-page/babel-plugin-tcon)，简化写法
 
 ```js
-import { size, button } from 'tcon'
+import 'tcon/layout/size/button'
 ```
 

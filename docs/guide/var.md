@@ -16,12 +16,12 @@
 
 ```
 # 1. 编写自己的配置文件 
-style/var.styl
+style/tcon/tcon-var.js
 
 # 2. 安装 `tcon-cli`
-cnpm tcon-cli --save
+cnpm i tcon-cli --save
 
 # 3. 生成样式
-tcon-cli style/var.styl style/custom-tcon
+tcon --i=style/tcon/tcon-var.js --o=style/tcon
 ```
 

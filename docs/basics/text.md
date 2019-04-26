@@ -5,7 +5,7 @@
 ```js
 import 'tcon/dist/text.css'
 // or
-import { text } from 'tcon'
+import 'tcon/text'
 ```
  
 ::: tip

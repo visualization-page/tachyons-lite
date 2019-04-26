@@ -5,7 +5,7 @@
 ```js
 import 'tcon/dist/color.css'
 // or
-import { color } from 'tcon'
+import 'tcon/color'
 ```
 
 自定义生成

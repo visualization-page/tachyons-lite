@@ -8,7 +8,7 @@ import 'tcon/dist/border.css'
 import 'tcon/dist/color.css'
 
 // or
-import { border, color } from 'tcon'
+import 'tcon/border/color'
 ```
 
 自定义边框
