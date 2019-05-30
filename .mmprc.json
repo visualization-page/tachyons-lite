@@ -1,0 +1,10 @@
+{
+  "prFilePath": [],
+  "prBr": [],
+  "mainBrList": [
+    "master",
+    "develop"
+  ],
+  "master": "npm run size && npm run layout && npm run color && npm run text && npm run border && npm run shadow && npm run button && npm run reset && npm run release",
+  "develop": "npm run release"
+}

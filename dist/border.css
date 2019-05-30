@@ -18,6 +18,7 @@
   transform: scale(0.5, 0.5);
   pointer-events: none;
   z-index: 1;
+  border-width: 0;
 }
 .bd-dotted {
   border-style: dotted;

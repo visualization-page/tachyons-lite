@@ -1,3 +1,15 @@
+.dib-top {
+  vertical-align: top;
+}
+.dib-middle {
+  vertical-align: middle;
+}
+.fixed-center,
+.absolute-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /**
  * modules
  */
@@ -97,21 +109,9 @@
 /**
  * components
  */
-.fixed-center,
-.absolute-center {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .fixed-bottom {
   bottom: 0;
 }
 .absolute-bottom {
   bottom: 0;
-}
-.dib-middle {
-  vertical-align: middle;
-}
-.dib-top {
-  vertical-align: top;
 }

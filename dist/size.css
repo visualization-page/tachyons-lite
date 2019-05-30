@@ -1,3 +1,18 @@
+/**
+ * 生成 css
+ * @params $key alias 的 key
+ * @params $value 尺寸的值
+ * @params $dirKey 方向的简写
+ * @params $dirVal 方向的值，可能存在多个
+ * @params $hasVw 是否为 vw 单位
+ */
+/**
+ * 生成 css
+ * @params $type alias 的 key
+ * @params $list 尺寸列表
+ * @params $hasDir 是否包含方向
+ * @params forceVw 是否强制转化为 vw
+ */
 .m-auto {
   margin-left: auto;
   margin-right: auto;
