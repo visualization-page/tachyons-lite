@@ -1,6 +1,6 @@
 {
   "name": "tcon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "简化版 tachyons",
   "main": "index.js",
   "directories": {
