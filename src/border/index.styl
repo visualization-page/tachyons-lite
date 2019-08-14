@@ -12,8 +12,11 @@ dirAlias = {
 }
 
 dirMobileAlias = {
+  '': '',
   t: top,
   b: bottom,
+  l: left,
+  r: right,
   tb: top bottom
 }
 
@@ -32,6 +35,7 @@ gen($list)
     isNone = $name == none
     name = isEm ? 'd' : $alias
     .b{name}
+      border none
       for $n in $name
         val = isEm || isNone ? '' : $n + '-'
         border-{val}style isNone ? none : solid
@@ -45,7 +49,7 @@ genMobile($dirList, $colorList, $suffix = '')
         &:before
           @extend $border
           for $n in $name
-            border-{$n}-width 1px
+            border-{$n == '' ? '' : $n + '-'}width 1px
           border-style solid
           border-color $c
 

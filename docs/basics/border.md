@@ -69,7 +69,29 @@ dirAlias = {
   border-style none
 ```
 
-移动端边框提供，上边框 `.mbt` 和 下边框 `.mbb`，通过伪元素实现 `0.5px` 的宽度，边框颜色 `#eeeeee`。
+### 移动端边框提供
+
+```stylus
+dirMobileAlias = {
+  '': '',
+  t: top,
+  b: bottom,
+  l: left,
+  r: right,
+  tb: top bottom
+}
+```
+
+使用：
+ 
+- mb
+- mbt
+- mbb
+- mbl
+- mbr
+- mbtb
+
+上边框 `.mbt` 和 下边框 `.mbb`，通过伪元素实现 `0.5px` 的宽度，边框颜色 `#eeeeee`。
 
 自定义移动端边框
 ```stylus
