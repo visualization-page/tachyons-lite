@@ -45,24 +45,24 @@ alias = {
     data() {
       return {
         color: {
-          '000': #000000,
-          '333': #262A30,
-          '666': #5C626B,
-          '999': #959BA3,
-          fff: #ffffff,
-          aaa: #aaaaaa,
-          ccc: #cbcfd6,
-          eee: #eeeeee,
-          f2: #f2f2f2,
-          f7: #f7f8f9,
+          '000': '#000000',
+          '333': '#262A30',
+          '666': '#5C626B',
+          '999': '#959BA3',
+          fff: '#ffffff',
+          aaa: '#aaaaaa',
+          ccc: '#cbcfd6',
+          eee: '#eeeeee',
+          f2: '#f2f2f2',
+          f7: '#f7f8f9',
         
           // 主色
-          main: #ff4400,
+          main: '#ff4400',
         
-          link: #488ff9,
-          success: #2dc888,
-          warning: #ffa400,
-          error: #f53939
+          link: '#488ff9',
+          success: '#2dc888',
+          warning:' #ffa400',
+          error: '#f53939'
         }
       } 
     },
