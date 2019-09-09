@@ -17,6 +17,7 @@
     "shadow": "stylus src/shadow/index.styl -o ./dist/shadow.css",
     "button": "stylus src/button/index.styl -o ./dist/button.css",
     "reset": "stylus src/reset/index.styl -o ./dist/reset.css",
+    "pc": "stylus src/pc/index.styl -o ./dist/pc.css",
     "release": "stylus src/index.styl -o ./dist/tcon.css --compress"
   },
   "repository": {

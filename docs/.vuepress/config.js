@@ -35,6 +35,13 @@ module.exports = {
           '/components/layout',
           '/components/text'
         ]
+      },
+      {
+        title: 'pc独有',
+        collapsable: false,
+        children: [
+          '/pc/',
+        ]
       }
     ],
 
