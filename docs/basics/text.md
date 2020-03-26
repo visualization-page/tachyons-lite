@@ -27,3 +27,6 @@ import 'tcon/text'
 |文本换行||
 |.break|{ word-break: break-all; }|换行|
 |.nowrap|{ white-space: nowrap; }|不换行|
+|.cp|{ cursor: pointer; }||
+|.cm|{ cursor: move; }||
+|.fn|{ font-family: 'PingFang SC...' }||
