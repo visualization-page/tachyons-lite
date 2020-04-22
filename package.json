@@ -1,6 +1,6 @@
 {
   "name": "tcon",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "简化版 tachyons",
   "main": "dist/tcon.css",
   "directories": {
