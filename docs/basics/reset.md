@@ -8,4 +8,8 @@ import 'tcon/dist/reset.css'
 import 'tcon/reset'
 ```
 
-
+| 类 | 样式 |
+|------|------|
+|oa|overflow:auto;|
+|oam|overflow:auto;-webkit-overflow-scrolling:touch;|
+|oh|overflow:hidden;|

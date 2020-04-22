@@ -29,4 +29,4 @@ import 'tcon/text'
 |.nowrap|{ white-space: nowrap; }|不换行|
 |.cp|{ cursor: pointer; }||
 |.cm|{ cursor: move; }||
-|.fn|{ font-family: 'PingFang SC...' }||
+|.font-normalize|{ font-family: 'PingFang SC...' }||
